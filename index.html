@@ -5,76 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumia Clone - Home</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Header with Navbar -->
-    <header class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Jumia Logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Jumia Logo" width="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="nav-icons">
-                <a href="#" class="cart-icon">
+                <a href="#" class="btn btn-outline-dark ms-3">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
+                    <span class="badge bg-danger rounded-pill">0</span>
                 </a>
             </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-warning text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Jumia Clone</h1>
+            <p class="lead">Your one-stop shop for everything!</p>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero">
-            <h1>Welcome to Jumia Clone</h1>
-            <p>Your one-stop shop for everything!</p>
-        </section>
-
-        <section class="featured-products">
-            <h2>Featured Products</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="assets/images/product1.jpg" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>Price: $20.00</p>
-                    <button>Add to Cart</button>
+    <!-- Featured Products Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/images/product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Price: $20.00</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="product-card">
-                    <img src="assets/images/product2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>Price: $25.00</p>
-                    <button>Add to Cart</button>
-                </div>
-                <!-- Add more products as needed -->
             </div>
-        </section>
-    </main>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/images/product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Price: $25.00</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <p>© 2024 Jumia Clone. All Rights Reserved.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <ul class="list-unstyled d-flex justify-content-center mb-3">
+                <li class="mx-3"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                <li class="mx-3"><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                <li class="mx-3"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                <li class="mx-3"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+            <p class="mb-0">© 2024 Jumia Clone. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
