@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumia Clone - Home</title>
-    <!-- Correct Bootstrap CSS Link -->
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -43,15 +43,50 @@
         </div>
     </header>
 
+    <!-- Featured Products Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/images/product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Price: $20.00</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="assets/images/product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Price: $25.00</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p>© 2024 Jumia Clone. All Rights Reserved.</p>
+            <ul class="list-unstyled d-flex justify-content-center mb-3">
+                <li class="mx-3"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                <li class="mx-3"><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                <li class="mx-3"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                <li class="mx-3"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+            <p class="mb-0">© 2024 Jumia Clone. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Correct Bootstrap JavaScript Links -->
+    <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
