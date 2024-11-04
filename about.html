@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Jumia Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Jumia Logo">
+    <header class="bg-light p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Jumia Logo" height="50">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <h1>About Us</h1>
-        <p>We are dedicated to providing the best online shopping experience.</p>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Our Mission</h2>
+                <p>At Jumia Clone, our mission is to provide customers with the best online shopping experience by offering a wide variety of products at competitive prices.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h2>Our Vision</h2>
+                <p>We envision becoming the leading online marketplace in Africa, connecting customers with the products they love.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Wide Range of Products</li>
+                    <li>Competitive Pricing</li>
+                    <li>Easy Returns</li>
+                    <li>24/7 Customer Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Get in Touch</h2>
+                <p>We would love to hear from you! Please visit our <a href="contact.html">Contact</a> page to reach out.</p>
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer class="bg-light text-center p-3">
         <p>© 2024 Jumia Clone. All Rights Reserved.</p>
     </footer>
 
-    <script src="assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
