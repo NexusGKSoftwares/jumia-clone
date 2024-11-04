@@ -119,21 +119,60 @@
         </div>
     </section>
     
-    <footer class="bg-light text-center p-3">
-        <p>© 2024 Jumia Clone. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 Jumia Clone. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
-
     <script>
-        const cart = [];
+        let cart = [];
 
-        function addToCart(product) {
-            cart.push(product);
-            alert(`${product.name} has been added to your cart.`);
-        }
+// Function to add items to the cart
+function addToCart(product) {
+    cart.push(product);
+    updateCartCount();
+    alert(`${product.name} has been added to your cart.`);
+}
+
+// Function to update cart count in the navbar
+function updateCartCount() {
+    const cartCount = document.getElementById("cartCount");
+    cartCount.textContent = cart.length;
+}
+
+// Function to handle the search functionality
+function searchProducts(event) {
+    event.preventDefault(); // Prevent form submission
+    const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+    const filteredProducts = products.filter(product => 
+        product.name.toLowerCase().includes(searchQuery)
+    );
+
+    console.log('Filtered Products:', filteredProducts);
+    // Here you can render filteredProducts to the UI
+}
+
+// Adding event listeners to "Add to Cart" buttons
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        const product = {
+            id: button.getAttribute('data-id'),
+            name: button.getAttribute('data-name'),
+            price: button.getAttribute('data-price')
+        };
+        addToCart(product);
+    });
+});
+
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
 </body>
-
 </html>
