@@ -3,6 +3,9 @@
 # Jumia Clone 🛍️
 
 Welcome to the Jumia Clone project! This is a web application that mimics the online shopping experience provided by Jumia, a popular e-commerce platform in Africa.
+# Jumia Clone 🛍️
+
+Welcome to the Jumia Clone project! This is a web application that mimics the online shopping experience provided by Jumia, a popular e-commerce platform in Africa.
 
 ## Table of Contents 📚
 - [Features](#features)
@@ -36,7 +39,7 @@ To get started with the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/NexusGKSoftwares/jumia-clone.git
-   ```
+
 
 2. Navigate to the project directory:
    ```bash
