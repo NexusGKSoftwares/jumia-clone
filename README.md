@@ -1,5 +1,4 @@
 
-```markdown
 # Jumia Clone 🛍️
 
 Welcome to the Jumia Clone project! This is a web application that mimics the online shopping experience provided by Jumia, a popular e-commerce platform in Africa.
